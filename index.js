@@ -71,7 +71,7 @@ const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 passport.use(new GoogleStrategy({
     clientID: CLIENTID,
     clientSecret: SECRET,
-    callbackURL: "http://localhost:8000/auth/google/callback"
+    callbackURL: "https://mym-ass-nasa.onrender.com/auth/google/callback"
   },
   function(accessToken, refreshToken, profile, done) {
       userProfile=profile;
